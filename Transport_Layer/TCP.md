@@ -58,9 +58,37 @@
 - 检查代码，特别是释放资源的代码
 - 检查配置，特别是处理请求的线程配置
 
+### RTT & RTO
+- RTT：发送一个数据包到收到对应的 ACK，所花费的时间
+- RTO：重传时间间隔
 
+### TCP 的滑动窗口
+TCP 使用滑动窗口做流量控制与乱序重排
+- 保证 TCP 的可靠性
+- 保证 TCP 的流控特性
 
+窗口数据的计算过程：
+- 发送端程序：
+  - LastByteAcked
+  - LastByteSent
+  - LastByteWritten
+- 接收端程序：
+  - LastByteRead
+  - NextByteExpected 
+  - LastByteRcvd
+- AdvertisedWindow = MaxRcvBuffer - (LastByteRcvd - LastByteRead)
+- EffectiveWindow = AdvertisedWindow - (LastByteSent - LastByteAcked)
 
+TCP 会话的发送方：
+- Sent and Acknowledged 
+- Sent But Not Yet Acknowledged 
+- Not Sent, Recipient Ready to Receive 
+- Not Sent, Recipient NOT Ready to Receive 
+
+TCP 会话的接收方：
+- Received and Acknowledged  
+- Not Yet Received, Transmitter Permitted To Send 
+- Not Yet Received, Transmitter May NOT Send
 
 
 
