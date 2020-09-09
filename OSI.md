@@ -3,7 +3,7 @@
 ## 应用层
 - FTP
 - DNS
-- Telnet
+- Telnet（远程登录）
 - SMTP
 - HTTP
 - WWW
