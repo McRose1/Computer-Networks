@@ -5,6 +5,7 @@
 - DNS
 - Telnet（远程登录）
 - SMTP
+- SNMP（简单网络管理协议）
 - HTTP
 - WWW
 - NFS
