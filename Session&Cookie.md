@@ -9,7 +9,7 @@ Session 代表 server 和 client 的一次会话过程，这个过程是连续�
 
 Session 是一个容器，可以存放会话过程中的任何对象
 
-Session 的创建和使用总在 server 端，client 端浏览器从来没有得到过 session 对象，只是拿到 sessionId
+**Session 的创建和使用总在 server 端，client 端浏览器从来没有得到过 session 对象，只是拿到 sessionId**
 
 在 Servlet 中，session 指的是 HttpSession 类的对象
 
@@ -56,7 +56,8 @@ HTTP 的无状态性简化了服务器的设计，并且提高了 Web 服务器�
 
 ## Cookie 和 Session 的区别
 1. cookie 只能存储 ASCII 码字符串，而 session 则可以存储任何类型的数据，因此在考虑数据复杂性时互选 session。
-2. session 存储在服务器，而 cookie 存储在客户浏览器中，容易被恶意查看。如果非要将一些隐私数据存在 cookie 中，可以将 cookie 值进行加密，然后再服务器进行解密。
+2. cookie 会随着 HTTP header 在网络层进行传输，而 session 存在于服务器端，不经过传输
+3. session 存储在服务器，而 cookie 存储在客户浏览器中，容易被恶意查看。如果非要将一些隐私数据存在 cookie 中，可以将 cookie 值进行加密，然后再服务器进行解密。
 
 
 
