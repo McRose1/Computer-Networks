@@ -20,6 +20,9 @@ A -> B
 4. Once computer A receives computer B's MAC address, the communication can take place between the two(also store B's MAC address in its ARP cache) 
 
 
+ARP 在 OSI 7 层模型中属于数据链路层；而在 TCP/IP 模型中属于网络层。
+
+
 ## ARP cache(table)
 The ARP cache(table) is used to make a network more efficient.
 
