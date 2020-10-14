@@ -31,7 +31,6 @@
 ## 网络层
 - IP
 - ICMP
-- ARP
 - RARP
 - OSPF
 - IPX
@@ -39,7 +38,8 @@
 - IGRP
 - 路由器
 
-## 数据链层
+## 数据链路层
+- ARP
 - MAC
 - VLAN
 - HDLC
