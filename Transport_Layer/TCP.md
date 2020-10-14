@@ -13,6 +13,8 @@
 - SYN：同步序号，用于建立连接过程
 - FIN：finish 标志，用于释放连接
 
+![connect](/images/handshake.jpeg)
+
 ## TCP 三次握手
 第一次握手：建立连接时，客户端发送 SYN 包（syn=j）到服务器，并进入 SYN_SEND 状态，等待服务器确认；
 
